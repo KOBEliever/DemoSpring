@@ -19,4 +19,18 @@ public class PointCut {
         System.out.println(joinPoint.getArgs().length + "启动后置增强");
     }
 
+    /**
+     * 异常抛出增强
+     */
+    public void afterThrowing() {
+        System.out.println("启动异常抛出增强!");
+    }
+
+    /**
+     * 最终增强
+     */
+    public void after() {
+        System.out.println("启动最终增强!");
+    }
+
 }
