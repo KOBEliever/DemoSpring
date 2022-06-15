@@ -20,7 +20,7 @@ public class Printer {
     /**
      * 打印
      */
-    public void work() {
+    public void work(String arg1, String arg2, String arg3) {
         System.out.println("使用" + this.box.getColor() + "以及" + this.paper.getSize() + "进行打印。");
     }
 }

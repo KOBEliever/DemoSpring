@@ -24,10 +24,15 @@ public class TestSpring {
     /**
      * 测试spring组装打印机
      */
+//    @Test
+//    public void printWork() {
+//        Printer bean = classPathXmlApplicationContext.getBean(Printer.class);
+//        bean.work();
+//    }
     @Test
-    public void printWork() {
+    public void testAOP() {
         Printer bean = classPathXmlApplicationContext.getBean(Printer.class);
-        bean.work();
+        bean.work("参数1", "参数2", "参数3");
     }
 
 }

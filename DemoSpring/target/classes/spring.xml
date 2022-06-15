@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context
-        http://www.springframework.org/schema/context/spring-context.xsd">
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd"
+       xmlns:aop="http://www.springframework.org/schema/aop">
     <!-- 1.配置实体类 -->
     <bean id="helloSpring" class="com.cqu.spring.hello.HelloSpring">
         <property name="hello" value="你好"/>
@@ -21,15 +21,29 @@
     <bean id="blackBox" class="com.cqu.spring.print.BlackBox"/>
     <bean id="colorBox" class="com.cqu.spring.print.ColorBox"/>
     <!--组装打印机-->
-<!--    <bean id="printer" class="com.cqu.spring.print.Printer">-->
-<!--        <property name="box" ref="colorBox"/>-->
-<!--        <property name="paper" ref="a4Paper"/>-->
-<!--    </bean>-->
+    <!--    <bean id="printer" class="com.cqu.spring.print.Printer">-->
+    <!--        <property name="box" ref="colorBox"/>-->
+    <!--        <property name="paper" ref="a4Paper"/>-->
+    <!--    </bean>-->
     <!--P命名空间组装打印机-->
-<!--    <bean id="printer" class="com.cqu.spring.print.Printer" p:box-ref="colorBox" p:paper="a4Paper"/>-->
+    <!--    <bean id="printer" class="com.cqu.spring.print.Printer" p:box-ref="colorBox" p:paper="a4Paper"/>-->
     <!--构造注入-->
     <bean id="printer" class="com.cqu.spring.print.Printer">
         <constructor-arg name="box" ref="colorBox"/>
         <constructor-arg index="1" ref="a4Paper"/>
     </bean>
+    <!--配置切面类-->
+    <bean id="aspect" class="com.cqu.spring.point.PointCut"/>
+    <!--定义切点-->
+    <aop:config>
+        <aop:pointcut id="PointCut" expression="execution(* com.cqu.spring.print.Printer.*(..))"/>
+        <!--4.引入切面-->
+        <aop:aspect ref="aspect">
+            <!--5.把切面的方法切入到切入点的方法里-->
+            <!--前置增强-->
+            <aop:before method="before" pointcut-ref="PointCut"/>
+        </aop:aspect>
+    </aop:config>
+
+
 </beans>

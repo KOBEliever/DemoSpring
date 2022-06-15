@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d314c1-0732-453b-b958-f30a828e32cf" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/hello/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/hello/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/hello/HelloSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/hello/HelloSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/A4Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/A4Paper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/B5Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/B5Paper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/BlackBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/BlackBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/ColorBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/ColorBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/Paper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/point/PointCut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/Printer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSpring.java" afterDir="false" />
@@ -44,22 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;474a5355535c0abfa5bffe565fcf0126&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "474a5355535c0abfa5bffe565fcf0126"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.TestSpring.printWork">
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestSpring.testAOP">
     <configuration name="TestSpring.printWork" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoSpring" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,6 +76,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSpring.testAOP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoSpring" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSpring" />
+      <option name="METHOD_NAME" value="testAOP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSpring.testHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoSpring" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSpring.testAOP" />
         <item itemvalue="JUnit.TestSpring.printWork" />
         <item itemvalue="JUnit.TestSpring.testA" />
         <item itemvalue="JUnit.TestSpring.testHello" />
@@ -107,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655260468517</updated>
       <workItem from="1655260470625" duration="3303000" />
-      <workItem from="1655274891150" duration="606000" />
+      <workItem from="1655274891150" duration="2478000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目，案例为打印机组装，实现按值注入、p命名空间注入、构造注入">
       <created>1655263492648</created>
@@ -116,11 +123,29 @@
       <option name="project" value="LOCAL" />
       <updated>1655263492648</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="注解注入">
+      <created>1655275736372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655275736373</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
