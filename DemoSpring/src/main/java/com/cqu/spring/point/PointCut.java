@@ -11,4 +11,12 @@ public class PointCut {
         System.out.println(joinPoint.getSignature().getName());
         System.out.println(joinPoint.getTarget().toString());
     }
+
+    /**
+     * 后置增强
+     */
+    public void afterReturning(JoinPoint joinPoint) {
+        System.out.println(joinPoint.getArgs().length + "启动后置增强");
+    }
+
 }

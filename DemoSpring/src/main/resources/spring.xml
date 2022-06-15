@@ -42,6 +42,8 @@
             <!--5.把切面的方法切入到切入点的方法里-->
             <!--前置增强-->
             <aop:before method="before" pointcut-ref="PointCut"/>
+            <!--后置增强-->
+            <aop:after-returning method="afterReturning" pointcut-ref="PointCut"/>
         </aop:aspect>
     </aop:config>
 
