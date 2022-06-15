@@ -30,9 +30,15 @@ public class TestSpring {
 //        bean.work();
 //    }
     @Test
-    public void testAOP() {
+    public void testAOP() throws Exception {
         Printer bean = classPathXmlApplicationContext.getBean(Printer.class);
         bean.work("参数1", "参数2", "参数3");
+    }
+
+    @Test
+    public void testAOPAround() throws Exception {
+        Printer bean = classPathXmlApplicationContext.getBean(Printer.class);
+        bean.workAround("参数1", "参数2", "参数3");
     }
 
 }
