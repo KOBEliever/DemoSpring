@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        a/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 1.配置实体类 -->
+    <bean id="helloSpring" class="com.cqu.spring.hello.HelloSpring">
+        <property name="hello" value="你好"/>
+        <property name="spring" value="Spring"/>
+    </bean>
+    <bean id="a" class="com.cqu.spring.hello.A">
+        <property name="helloSpring" ref="helloSpring"/>
+    </bean>
+    <!--配置打印机-->
+    <!--配置打印机组件-->
+    <bean id="a4Paper" class="com.cqu.spring.print.A4Paper"/>
+    <bean id="b5Paper" class="com.cqu.spring.print.B5Paper"/>
+    <bean id="blackBox" class="com.cqu.spring.print.BlackBox"/>
+    <bean id="colorBox" class="com.cqu.spring.print.ColorBox"/>
+    <!--组装打印机-->
+    <!--    <bean id="printer" class="com.cqu.spring.print.Printer">-->
+    <!--        <property name="box" ref="colorBox"/>-->
+    <!--        <property name="paper" ref="a4Paper"/>-->
+    <!--    </bean>-->
+    <!--P命名空间组装打印机-->
+    <!--    <bean id="printer" class="com.cqu.spring.print.Printer" p:box-ref="colorBox" p:paper="a4Paper"/>-->
+    <!--构造注入-->
+    <bean id="printer" class="com.cqu.spring.print.Printer">
+        <constructor-arg name="box" ref="colorBox"/>
+        <constructor-arg index="1" ref="a4Paper"/>
+    </bean>
+</beans>
