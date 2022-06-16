@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d314c1-0732-453b-b958-f30a828e32cf" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/point/PointCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/point/PointCut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/print/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cqu/spring/point/PointCutAnn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655260468517</updated>
       <workItem from="1655260470625" duration="3303000" />
-      <workItem from="1655274891150" duration="3784000" />
+      <workItem from="1655274891150" duration="5795000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目，案例为打印机组装，实现按值注入、p命名空间注入、构造注入">
       <created>1655263492648</created>
@@ -161,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655278197196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="AOP环绕增强">
+      <created>1655278824178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655278824178</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +190,8 @@
     <MESSAGE value="AOP前置增强" />
     <MESSAGE value="AOP后置增强" />
     <MESSAGE value="AOP异常增强、最终增强" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP异常增强、最终增强" />
+    <MESSAGE value="AOP环绕增强" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOP环绕增强" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
